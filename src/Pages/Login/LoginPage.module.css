@@ -1,0 +1,220 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  /* background: #fff; */
+}
+
+.formBox {
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  height: 450px;
+}
+
+.formBox h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #04693a;
+}
+
+.formBox label {
+  display: flex;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+
+.formBox input {
+  width: 90%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+.formBox input:focus {
+  border: 2px solid green; /* يخلي البوردر أخضر */
+  outline: none; /* يشيل الخط الأزرق الافتراضي */
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.5); /* لمعة خفيفة خضراء */
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background: #064d2d;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #04693a;
+}
+
+.register {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.logoSide {
+  flex: 1;
+  text-align: center;
+}
+
+.logoSide img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .logoSide {
+    margin-top: 20px;
+  }
+}
+.formBox {
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: left; /* الافتراضي إنجليزي */
+}
+
+[dir="rtl"] .formBox {
+  text-align: right; /* لو عربي */
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #333;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  /* المسافة من الجنبين */
+  margin: 0 15%;
+
+  /* العرض الكلي */
+  max-width: 70%;
+}
+
+.formBox {
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logoSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoSide img {
+  max-width: 300px;
+  width: 100%;
+}
+
+/* Responsive */
+/* @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0 5%; 
+    max-width: 90%;
+  }
+} */
+/* الحاوية كلها */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* الصندوق بتاع الفورم */
+.formBox {
+  flex: 1;
+  max-width: 400px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease forwards;
+  animation-delay: 0.2s;
+}
+
+/* الجزء اللي فيه اللوجو */
+.logoSide {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoSide img {
+  max-width: 300px;
+  opacity: 0;
+  transform: scale(0.8);
+  animation: fadeInScale 0.8s ease forwards;
+  animation-delay: 0.4s;
+}
+
+/* أنيميشن الحاوية والفورم */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* أنيميشن الصورة */
+@keyframes fadeInScale {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

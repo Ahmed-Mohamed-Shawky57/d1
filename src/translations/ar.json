@@ -1,0 +1,24 @@
+{
+  "sidebar": {
+    "dashboard": "لوحة التحكم",
+    "product": "المنتجات",
+    "customers": "العملاء",
+    "orders": "الطلبات",
+    "category": "الأقسام",
+    "invoices": "الفواتير",
+    "admin": "المشرف",
+    "notification": "الإشعارات",
+    "wallet": "المحفظة",
+    "clientType": "أنواع العملاء",
+    "lineForDelivery": "خطوط التوصيل",
+    "privacyPolicy": "سياسة الخصوصية",
+    "advertisements": "الإعلانات",
+    "branches": "الفروع",
+    "tools": "الأدوات",
+    "settings": "الحساب والإعدادات",
+    "help": "مساعدة",
+    "darkMode": "الوضع الليلي",
+    "headerTitle": "لوحة الإدارة",
+    "headerSub": "فيترا ماكس"
+  }
+}

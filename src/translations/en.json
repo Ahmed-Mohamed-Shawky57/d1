@@ -1,0 +1,24 @@
+{
+  "sidebar": {
+    "dashboard": "Dashboard",
+    "product": "Product",
+    "customers": "Customers",
+    "orders": "Orders",
+    "category": "Category",
+    "invoices": "Invoices",
+    "admin": "Admin",
+    "notification": "Notification",
+    "wallet": "Wallet",
+    "clientType": "Client Type",
+    "lineForDelivery": "Line For Delivery",
+    "privacyPolicy": "Privacy Policy",
+    "advertisements": "Advertisements",
+    "branches": "Branches",
+    "tools": "TOOLS",
+    "settings": "Account & Settings",
+    "help": "Help",
+    "darkMode": "Dark Mode",
+    "headerTitle": "DASHBOARD",
+    "headerSub": "Vetra Max"
+  }
+}
